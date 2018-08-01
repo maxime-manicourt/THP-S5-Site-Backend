@@ -1,0 +1,13 @@
+<div class="discours2">
+  <h2>Ceci est le profil de <span class = "username"><%= User.find_by(username: params['name']).username %> </span></h2>
+</div>
+<div class="form-container">
+  <div class="form-item">
+    <p>Petite bio :</p><br/>
+    <blockquote>" <%= User.find_by(username: params['name']).bio %> "</blockquote>
+  </div>
+
+</div>
+<div class="discours2">
+  <a href="/"><button>Retour à l'accueil</button></a>
+</div>

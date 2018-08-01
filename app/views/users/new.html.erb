@@ -1,0 +1,23 @@
+<div class="discours2">
+  <h2>Il ne vous reste plus qu'à entrer un nom d'utilisateur,
+    et une petite bio :)</h2>
+</div>
+<div class="form-container">
+  <div class="form-item">
+    <form action="/new_user" method="post">
+      Ton username :
+      <input type="text" name="username" value="username"/>
+      <br/>
+      <br/>
+      Ta bio :
+      <textarea name="bio" cols="40" rows="10"></textarea>
+      <br/>
+      <br/>
+      <input type="submit" name="Envoyer">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    </form>
+  </div>
+</div>
+<div class="back">
+  <a href="/"><button>Retour à l'accueil</button></a>
+</div>

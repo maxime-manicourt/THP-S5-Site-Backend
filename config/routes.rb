@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'static#home'
+  get '/new_user', to: 'users#new', as: 'new'
+  post '/new_user', to: 'users#create', as: 'create'
+
+  get '/users/:name', to: 'users#show'
+  get '/error', to: 'static#error', as: 'error'
 end

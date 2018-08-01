@@ -1,0 +1,16 @@
+<div class="discours">
+  <h1>Bonjour à tous ! Ceci est une app QUI DECHIRE</h1>
+</div>
+<div class="option-container">
+  <div class="option-item">
+    <a href="<%= new_path %>">Clique ici pour créer un User</a>
+  </div>
+</div>
+<div>
+  <% User.all.each_with_index do |users, index| %>
+    <p>
+      </br>
+      <a href="/users/<%= users.username %>"><button> Voir la page de <%= users.username %></button></a>
+    </p>
+  <% end %>
+</div>

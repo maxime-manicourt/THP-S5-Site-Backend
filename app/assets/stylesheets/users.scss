@@ -1,0 +1,50 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.discours2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 20vh;
+    transform: translateY(-50%);
+    //height: 75vh;
+}
+
+p {
+  color: #fff;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  margin-top: 35px;
+}
+
+.form-item {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #B00100;
+  padding: 50px;
+  border-radius: 7px;
+  border: 2px solid #B00100;
+
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.form-item > input {
+  width: 100px;
+}
+
+.username {
+  color: #B00100;
+}

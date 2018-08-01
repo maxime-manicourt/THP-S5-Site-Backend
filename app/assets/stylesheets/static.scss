@@ -1,0 +1,71 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-height: 970px;
+  background-color: #EFEFEF;
+  font-family: Loma;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.discours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-top: 35vh;
+  transform: translateY(-50%);
+  //height: 75vh;
+}
+
+.option-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  margin-top: 35px;
+}
+
+.option-item {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #B00100;
+  padding: 10px;
+  border-radius: 7px;
+  border: 2px solid #B00100;
+
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.option-item:hover {
+  background-color: #fff;
+  color: #B00100;
+}
+
+.back {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  margin-top: 25px;
+}
